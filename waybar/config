@@ -19,7 +19,7 @@
   "spacing": 0,
 
   // Load Modules
-  "include": ["/home/oguz/.config/waybar/modules/modules.json"],
+  "include": ["/etc/xdg/waybar/modules/modules.json"],
 
   // Modules Left
   "modules-left": [

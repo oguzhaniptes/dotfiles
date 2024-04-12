@@ -89,9 +89,9 @@
   // Cliphist
   "custom/cliphist": {
     "format": "",
-    "on-click": "sleep 0.1 && /home/oguz/.config/waybar/scripts/cliphist.sh",
-    "on-click-right": "sleep 0.1 && /home/oguz/.config/waybar/scripts/cliphist.sh d",
-    "on-click-middle": "sleep 0.1 && /home/oguz/.config/waybar/scripts/cliphist.sh w",
+    "on-click": "sleep 0.1 && /etc/xdg/waybar/scripts/cliphist.sh",
+    "on-click-right": "sleep 0.1 && /etc/xdg/waybar/scripts/cliphist.sh d",
+    "on-click-middle": "sleep 0.1 && /etc/xdg/waybar/scripts/cliphist.sh w",
     "tooltip": false
   },
 
@@ -113,7 +113,7 @@
     "tooltip-format-ethernet": " {ifname}\nIP: {ipaddr}\n up: {bandwidthUpBits} down: {bandwidthDownBits}",
     "tooltip-format-disconnected": "Disconnected",
     "max-length": 50,
-    "on-click": "/home/oguz/.config/waybar/scripts/networkmanager.sh"
+    "on-click": "/etc/xdg/waybar/scripts/networkmanager.sh"
   },
 
   // Battery

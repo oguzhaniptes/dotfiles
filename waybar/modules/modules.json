@@ -64,7 +64,9 @@
       "(.*) - nvim": " $1",
       "(.*) - Google Chrome": "Google Chrome",
       "(.*) - Visual Studio Code": "Visual Studio Code",
-      "(.*) - Sublime Text (.*)": "Sublime Text"
+      "(.*) - Sublime Text (.*)": "Sublime Text",
+      "(.*) - Discord": "Discord",
+      "OBS (.*)": "OBS"
     },
     "separate-outputs": true
   },

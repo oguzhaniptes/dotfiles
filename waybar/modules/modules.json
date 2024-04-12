@@ -112,7 +112,7 @@
     "format-disconnected": "Disconnected",
     "tooltip-format": " {ifname} via {gwaddri}",
     "tooltip-format-wifi": "   {ifname} @ {essid}\nIP: {ipaddr}\nStrength: {signalStrength}%\nFreq: {frequency}MHz\nUp: {bandwidthUpBits} Down: {bandwidthDownBits}",
-    "tooltip-format-ethernet": "󰈀 {ifname}\nIP: {ipaddr}\n up: {bandwidthUpBits} down: {bandwidthDownBits}",
+    "tooltip-format-ethernet": "󰈀   {ifname}\nIP: {ipaddr}\nup: {bandwidthUpBits} down: {bandwidthDownBits}",
     "tooltip-format-disconnected": "Disconnected",
     "max-length": 50,
     "on-click": "/etc/xdg/waybar/scripts/networkmanager.sh"
@@ -153,10 +153,23 @@
       "car": " ",
       "default": [" ", " ", " "]
     },
-    "on-click": "pavucontrol"
-    // "on-click-right": "/etc/xdg/waybar/scripts/volume.sh",
+    "on-click": "pavucontrol",
+    "on-click-right": "/etc/xdg/waybar/scripts/volume --toggle"
     // "on-scroll-up": "/etc/xdg/waybar/scripts/volume.sh --inc",
     // "on-scroll-down": "/etc/xdg/waybar/scripts/volume.sh --dec",
+  },
+
+  "pulseaudio#microphone": {
+    "format": "{format_source}",
+    "format-source": "",
+    "format-source-muted": " ",
+    "on-click": "/etc/xdg/waybar/scripts/volume --toggle-mic",
+    "on-click-right": "pavucontrol",
+    "on-scroll-up": "/etc/xdg/waybar/scripts/volume --mic-inc",
+    "on-scroll-down": "/etc/xdg/waybar/scripts/volume --mic-dec",
+    "scroll-step": 5,
+    "tooltip": true,
+    "tooltip-format": " at {volume}%"
   },
 
   // Bluetooth
@@ -167,6 +180,18 @@
     "interval": 30,
     "on-click": "blueman-manager",
     "format-no-controller": ""
+  },
+
+  // Backlight
+  "backlight": {
+    "device": "amdgpu_bl1",
+    "format": "{icon}",
+    "format-alt-click": "click-right",
+    "format-alt": "{icon} {percent}%",
+    "format-icons": ["󰃞 ", "󰃟 ", "󰃠 "],
+    "scroll-step": 5,
+    "on-scroll-up": "/etc/xdg/waybar/scripts/brightness --inc",
+    "on-scroll-down": "/etc/xdg/waybar/scripts/brightness --dec"
   },
 
   // System tray

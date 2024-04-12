@@ -42,8 +42,10 @@
     "hyprland/workspaces",
     "custom/cliphist",
     "pulseaudio",
+    "pulseaudio#microphone",
     "bluetooth",
     "battery", 
+    "backlight",
     "network",
     "tray",
     "custom/exit"

@@ -41,7 +41,7 @@ window#waybar {
   padding: 2px 10px 2px 10px;
   margin: 4px 4px 2px 4px;
   opacity: 0.8;
-  border: 2px solid @bordercolor;
+  border: 0px;
 }
 
 /* Weather */
@@ -62,7 +62,7 @@ window#waybar {
   border-radius: 20px;
   background-color: @backgrounddark;
   opacity: 0.8;
-  border: 2px solid @bordercolor;
+  border: 0px;
 }
 #custom-weather.severe {
   color: #eb937d;
@@ -142,7 +142,7 @@ window#waybar {
   padding: 2px 4px;
   border-radius: 20px;
   opacity: 0.8;
-  border: 3px solid @backgroundlight;
+  border: 0px;
 }
 
 #taskbar button {

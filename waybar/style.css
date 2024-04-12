@@ -32,6 +32,44 @@ window#waybar {
   border: 0px;
 }
 
+/* Window */
+#window {
+  background: @backgroundlight;
+  padding: 2px 10px 2px 10px;
+  margin: 4px 4px 2px 4px;
+  border-radius: 20px;
+  color: @textcolor2;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+window#waybar.empty #window {
+  padding: 0px;
+  margin: 0px;
+  background-color: transparent;
+}
+
+/* Taskbar */
+#taskbar {
+  background: @backgroundlight;
+  margin: 4px 4px 2px 4px;
+  padding: 2px 4px;
+  border-radius: 20px;
+  opacity: 0.8;
+  border: 0px;
+}
+
+#taskbar button {
+  padding: 0px 2px;
+  margin: 0px 4px;
+  border-radius: 20px;
+}
+
+#taskbar button:hover {
+  box-shadow: black;
+  background: none;
+}
+
 /* Clock */
 #clock {
   background-color: @backgrounddark;
@@ -98,7 +136,7 @@ window#waybar {
 /* Workspaces */
 #workspaces {
   background: @workspacesbackground1;
-  margin: 4px 4px 3px 4px;
+  margin: 4px 4px 2px 4px;
   padding: 2px 4px;
   border-radius: 20px;
   border: 0px;
@@ -132,43 +170,6 @@ window#waybar {
   background: @workspacesbackground2;
   border-radius: 20px;
   opacity: 0.8;
-}
-
-/* Taskbar */
-
-#taskbar {
-  background: @backgroundlight;
-  margin: 4px 1px 3px 1px;
-  padding: 2px 4px;
-  border-radius: 20px;
-  opacity: 0.8;
-  border: 0px;
-}
-
-#taskbar button {
-  padding: 0px 2px;
-  margin: 0px 4px;
-  border-radius: 20px;
-}
-
-#taskbar button:hover {
-  box-shadow: black;
-  background: none;
-}
-
-/* Window */
-#window {
-  background: @backgroundlight;
-  padding: 2px 10px 2px 10px;
-  margin: 4px 4px 2px 4px;
-  border-radius: 20px;
-  color: @textcolor2;
-  font-size: 14px;
-  opacity: 0.8;
-}
-
-window#waybar.empty #window {
-  background-color: transparent;
 }
 
 /* Custom Cliphist */
@@ -282,6 +283,26 @@ window#waybar.empty #window {
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-direction: alternate;
+}
+
+/* Tray */
+
+#tray {
+  background-color: @backgroundlight;
+  font-size: 14px;
+  color: @textcolor2;
+  border-radius: 20px;
+  padding: 2px 10px 2px 10px;
+  margin: 4px 4px 2px 4px;
+  opacity: 0.8;
+}
+
+#tray > .passive {
+  -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+  -gtk-icon-effect: highlight;
 }
 
 /* -----------------------------------------------------
@@ -448,30 +469,4 @@ tooltip label {
 
 #language {
   margin-right: 10px;
-}
-
-/* -----------------------------------------------------
-* Clock
-* ----------------------------------------------------- */
-
-/* -----------------------------------------------------
-* Tray
-* ----------------------------------------------------- */
-
-#tray {
-  background-color: @backgroundlight;
-  font-size: 14px;
-  color: @textcolor2;
-  border-radius: 20px;
-  padding: 2px 10px 2px 10px;
-  margin: 4px 4px 2px 4px;
-  opacity: 0.8;
-}
-
-#tray > .passive {
-  -gtk-icon-effect: dim;
-}
-
-#tray > .needs-attention {
-  -gtk-icon-effect: highlight;
 }

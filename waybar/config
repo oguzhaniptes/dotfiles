@@ -24,10 +24,10 @@
   // Modules Left
   "modules-left": [
       "custom/appmenu",
-      //"group/settings"
-      //"group/quicklinks",
       "hyprland/window",
       "wlr/taskbar"
+      //"group/settings"
+      //"group/quicklinks",
       //"custom/empty"
   ],
 

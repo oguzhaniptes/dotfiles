@@ -14,15 +14,15 @@
 
   "modules-left": [
     "custom/appmenu",
-    "hyprland/window",
-    "wlr/taskbar"  
+    "hyprland/workspaces",
+    "hyprland/window"
   ],
   "modules-center": [
     "clock",
     "custom/weather"
   ],
   "modules-right": [
-    "hyprland/workspaces",
+    "wlr/taskbar"  ,
     "group/hardware",
     "group/control",
     "tray",

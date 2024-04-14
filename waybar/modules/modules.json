@@ -157,7 +157,7 @@
     "tooltip-format-disconnected": "Disconnected",
     "format-linked": "{ifname} (No IP) ",
     "format-alt": "{ifname}: IP:{ipaddr}",
-    "on-click": "wl-copy $(ip address show up scope global | grep inet | head -n1 | cut -d/ -f 1 | tr -d [:space:] | cut -c5-)"
+    "on-click": "~/.config/waybar/scripts/networkmanager.sh"
   },
 
   // Tay Icons

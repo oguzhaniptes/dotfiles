@@ -6,10 +6,7 @@
   transition-property: background-color;
   transition-duration: 0.5s;
   border: none;
-  min-height: 0;
   background-color: transparent;
-  padding: 2px 0px;
-  margin: 0;
 }
 
 /* The whole bar */
@@ -49,9 +46,13 @@ window#waybar.empty #window {
   border-radius: 20px;
   background-color: #1e1e1e;
   padding: 0px 10px;
+  margin: 0px;
 }
 
 #taskbar button {
+  background-color: red;
+  margin: 0px;
+
   border-radius: 20px;
   padding: 0px 12px;
 }
@@ -120,27 +121,38 @@ window#waybar.empty #window {
 
 #workspaces {
   border-radius: 20px;
-  padding: 2px 4px;
+  padding: 2px 8px;
   color: #c5e6ff;
   background-color: #1e1e1e;
 }
 
 #workspaces button {
+  transition: all 0.5s ease-in-out;
   border-radius: 20px;
-  padding: 0px 0px;
+  padding: 0px 4px;
   margin: 2px 0px;
 }
 
-#workspace button:hover {
-  transition: all 0.3s ease-in-out;
-  border-radius: 20px;
-  padding: 0px 4px;
-  color: black;
-  background: red;
+#workspaces button:hover {
+  transition: all 0.5s ease-in-out;
+  color: #c5e6ff;
+  background-color: #313131;
+  opacity: 0.8;
+}
+
+button {
+  padding: 0px;
+  margin: 0px;
+}
+
+button:hover {
+  padding: 0px 20px;
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: inherit;
 }
 
 #workspaces button.active {
-  transition: all 0.3s ease-in-out;
+  transition: all 0.5s ease-in-out;
   border-radius: 20px;
   min-width: 50px;
   color: #c5e6ff;
@@ -232,9 +244,12 @@ window#waybar.empty #window {
 tooltip {
   border-radius: 12px;
   background-color: #1e1e1e;
+  opacity: 0.9;
 }
 
 tooltip label {
+  background-color: #1e1e1e;
   padding: 12px;
   color: #c5e6ff;
+  opacity: 0.9;
 }

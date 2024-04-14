@@ -182,17 +182,17 @@ window#waybar.empty #window {
 
 #pulseaudio {
   color: #c5e6ff;
-  padding: 0px 4px;
+  padding: 0px 8px;
 }
 
 #network {
   color: #c5e6ff;
-  padding: 0px 4px;
+  padding: 0px 8px;
 }
 
 #backlight {
   color: #c5e6ff;
-  padding: 0px 4px;
+  padding: 0px 8px;
 }
 
 #custom-exit {

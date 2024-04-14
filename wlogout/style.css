@@ -8,6 +8,8 @@ window {
 }
 
 button {
+  font-size: 32;
+  font-family: JetBrainsMono Nerd Font;
   border-radius: 0;
   border-color: black;
   text-decoration-color: #ffffff;

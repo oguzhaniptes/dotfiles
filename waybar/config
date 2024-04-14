@@ -1,57 +1,34 @@
-// __        __          _                 
-// \ \      / /_ _ _   _| |__   __ _ _ __  
-//  \ \ /\ / / _` | | | | '_ \ / _` | '__| 
-//   \ V  V / (_| | |_| | |_) | (_| | |    
-//    \_/\_/ \__,_|\__, |_.__/ \__,_|_|    
-//                 |___/                   
-//  
-// by Stephan Raabe (2023) 
-// ----------------------------------------------------- 
-//
 {
-  // General Settings
+  // Load Custom Modules
+  "include": ["$HOME/.config/waybar/modules/modules.json"],
+   
   "layer": "top",
-  "margin-top": 8,
-  "margin-bottom": 0,
-  "layer": "top",
+  "position": "top",
+
+  "height": 42,
   "margin-left": 0,
-  "margin-right": 0,    
-  "spacing": 0,
+  "margin-right": 0,
+  "margin-bottom": 0,
+  "spacing": 12, // Gaps between modules (4px)
 
-  // Load Modules
-  "include": ["/etc/xdg/waybar/modules/modules.json"],
 
-  // Modules Left
   "modules-left": [
-      "custom/appmenu",
-      "hyprland/window",
-      "wlr/taskbar"
-      //"group/settings"
-      //"group/quicklinks",
-      //"custom/empty"
+    "custom/appmenu",
+    "hyprland/window",
+    "wlr/taskbar"  
   ],
-
-  // Modules Center
   "modules-center": [
     "clock",
     "custom/weather"
   ],
-  
-  // Modules Right    
   "modules-right": [
     "hyprland/workspaces",
-    "custom/cliphist",
-    "pulseaudio",
-    "pulseaudio#microphone",
-    "bluetooth",
-    "battery", 
-    "backlight",
-    "network",
+    "group/hardware",
+    "group/control",
     "tray",
     "custom/exit"
-      // "custom/updates",
-      // "group/hardware",
-      // "idle_inhibitor",
-      // "custom/ml4w-welcome",
-  ]
+    //"mpd"
+    // "custom/media"
+  ],
+    
 }

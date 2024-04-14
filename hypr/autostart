@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+
+swayidle -w timeout 300 "hyprlock" &                # lock screen after 10 min of idle
+swayidle -w timeout 1800 "systemctl suspend" &      # hibernate after 20 mins of idle
+# swayidle -w timeout 20 "hyprctl dispatch dpms off" &
+# resume 'hyprctl dispatch dpms on'               

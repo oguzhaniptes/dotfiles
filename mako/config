@@ -1,0 +1,15 @@
+font=IntelMono 10
+background-color=#282a36
+text-color=#ffffff
+border-color=#282a36
+default-timeout=4000
+border-radius=12
+
+[urgency=low]
+border-color=#282a36
+
+[urgency=normal]
+border-color=#f1fa8c
+
+[urgency=high]
+border-color=#ff5555

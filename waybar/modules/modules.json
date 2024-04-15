@@ -63,10 +63,10 @@
 
   // Workspaces
   "hyprland/workspaces": {
+    "format": "{name}",
     "on-click": "activate",
     "active-only": false,
     "all-outputs": true,
-    "format": "{}",
     "persistent-workspaces": {
       "*": 2
     }
@@ -148,7 +148,7 @@
   "network": {
     "interval": 1,
     "format": "{ifname}",
-    "format-wifi": "󰤨 {essid}",
+    "format-wifi": "󰤨 {ifname}",
     "format-ethernet": "󰈀 {ifname}",
     "format-disconnected": "󰌙",
     "tooltip-format": "{ifname}",

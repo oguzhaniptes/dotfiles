@@ -23,7 +23,7 @@
     "custom/weather"
   ],
   "modules-right": [
-    "wlr/taskbar"  ,
+    //"wlr/taskbar"  ,
     "group/hardware",
     "group/control",
     "tray",

@@ -148,7 +148,7 @@
   "network": {
     "interval": 1,
     "format": "{ifname}",
-    "format-wifi": "󰤨 {ifname}",
+    "format-wifi": "{icon} {ifname}",
     "format-ethernet": "󰈀 {ifname}",
     "format-disconnected": "󰌙",
     "tooltip-format": "{ifname}",
@@ -157,12 +157,15 @@
     "tooltip-format-disconnected": "Disconnected",
     "format-linked": "{ifname} (No IP) ",
     "format-alt": "{ifname}: IP:{ipaddr}",
-    "on-click": "~/.config/waybar/scripts/networkmanager.sh"
+    "on-click": "~/.config/waybar/scripts/networkmanager.sh",
+    "format-icons": {
+      "wifi": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"]
+    }
   },
 
   // Tay Icons
   "tray": {
-    "icon-size": 16,
+    "icon-size": 20,
     "spacing": 5
   },
 

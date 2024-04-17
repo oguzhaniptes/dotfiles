@@ -72,6 +72,13 @@
     }
   },
 
+  "hyprland/language": {
+    "format": "{}",
+    "format-tr": "tr",
+    "format-en": "en",
+    "keyboard-name": "holdchip-technology-inc--holdchip-gaming-keyboard"
+  },
+
   "group/hardware": {
     "orientation": "horizontal",
     "modules": ["memory", "cpu", "battery"]
@@ -80,14 +87,14 @@
   "battery": {
     "interval": 2,
     "states": {
-      "good": 95,
-      "warning": 30,
-      "critical": 15
+      "good": 90,
+      "warning": 20,
+      "critical": 10
     },
     "format": "{icon} {capacity}%",
-    "format-charging": "󰂄  {capacity}%",
-    "format-plugged": "󱔝  {capacity}%",
-    "format-icons": [" ", " ", " ", " ", " "]
+    "format-charging": "󰂄 {capacity}%",
+    "format-plugged": " {capacity}%",
+    "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
   },
 
   "cpu": {
@@ -100,7 +107,7 @@
   "memory": {
     "interval": 10,
     // "format": "☰ {used:0.2f} / {total:0.0f} GB",
-    "format": "  {used:0.1}G",
+    "format": "  {used:0.1f}G",
     "on-click": "kitty -e htop"
   },
 
@@ -166,7 +173,7 @@
   // Tay Icons
   "tray": {
     "icon-size": 20,
-    "spacing": 5
+    "spacing": 8
   },
 
   // Power Menu

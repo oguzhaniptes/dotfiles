@@ -24,6 +24,7 @@
   ],
   "modules-right": [
     //"wlr/taskbar"  ,
+    "hyprland/language",
     "group/hardware",
     "group/control",
     "tray",

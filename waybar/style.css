@@ -158,6 +158,13 @@ button:hover {
   background-color: #313131;
 }
 
+#language {
+  border-radius: 20px;
+  padding: 0px 12px;
+  color: #c5e6ff;
+  background-color: #1e1e1e;
+}
+
 #hardware {
   padding: 0px 12px;
   border-radius: 20px;

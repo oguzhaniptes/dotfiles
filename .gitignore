@@ -12,6 +12,13 @@
 /WebCord
 /qt5ct
 /JetBrains
+/qt6ct
+/libreoffice
+/vlc
+/gtk-3.0
+/xfce4
+/Thunar
+/configstore
 arkrc
 kiorc
 konsolerc
@@ -21,3 +28,9 @@ trashrc
 pavucontrol.ini
 baloofileinformationrc
 dolphinrc
+kcalcrc
+QtProject.conf
+ktrashrc
+okularrc
+filetypesrc
+gwenviewrc

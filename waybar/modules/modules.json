@@ -17,6 +17,7 @@
       "(.*) - Visual Studio Code": "Visual Studio Code",
       "(.*) - Sublime Text (.*)": "Sublime Text",
       "(.*) - Discord": "Discord",
+      "(.*) — LibreOffice Writer": "LibreOffice Writer",
       "OBS (.*)": "OBS"
     },
     "separate-outputs": true
@@ -159,7 +160,7 @@
     "format-ethernet": "󰈀 {ifname}",
     "format-disconnected": "󰌙",
     "tooltip-format": "{ifname}",
-    "tooltip-format-wifi": "󰤨 {ifname} @ {essid}\nIP: {ipaddr}\nStrength: {signalStrength}%\nFreq: {frequency}MHz\nn Up: {bandwidthUpBits}  Down: {bandwidthDownBits}",
+    "tooltip-format-wifi": "󰤨 {ifname} @ {essid}\nIP: {ipaddr}\nStrength: {signalStrength}%\nFreq: {frequency}MHz\n Up: {bandwidthUpBits}  Down: {bandwidthDownBits}",
     "tooltip-format-ethernet": "󰈀 {ifname}\nIP: {ipaddr}\n up: {bandwidthUpBits}  down: {bandwidthDownBits}",
     "tooltip-format-disconnected": "Disconnected",
     "format-linked": "{ifname} (No IP) ",

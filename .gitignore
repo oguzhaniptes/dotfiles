@@ -20,6 +20,8 @@
 /Thunar
 /configstore
 /nextjs-nodejs
+/zed
+/htop
 arkrc
 kiorc
 konsolerc
@@ -35,3 +37,4 @@ ktrashrc
 okularrc
 filetypesrc
 gwenviewrc
+okularpartrc

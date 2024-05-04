@@ -236,6 +236,21 @@ button:hover {
   background-color: #eb4d4b;
 }
 
+#tray menu {
+  background-color: #1e1e1e;
+}
+
+#tray menuitem {
+  padding: 4px;
+  background-color: #1e1e1e;
+  color: #c5e6ff;
+}
+
+#tray menuitem:hover {
+  background-color: #313131;
+  color: #c5e6ff;
+}
+
 /* If workspaces is the leftmost module, omit left margin */
 .modules-left > widget:first-child > #workspaces {
   margin-left: 0;

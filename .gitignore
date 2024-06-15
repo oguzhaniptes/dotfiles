@@ -1,3 +1,5 @@
+/Android Open Source Project
+/chromium
 /google-chrome
 /pulse
 /Code
@@ -9,6 +11,13 @@
 /kde.org
 /session
 /discord
+/eipihany
+/evolution
+/goa-1.0
+/Google
+/gtk-4.0
+/menus
+/totem
 /WebCord
 /qt5ct
 /JetBrains
@@ -38,3 +47,11 @@ okularrc
 filetypesrc
 gwenviewrc
 okularpartrc
+kdenliverc
+kdenlive-layoutsrc
+.gsd-keyboard.settings-ported
+kdenliverc
+monitors.xml
+monitors.xml~
+user-dirs.dirs
+user-dirs.locale

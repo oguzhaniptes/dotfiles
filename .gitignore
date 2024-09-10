@@ -15,6 +15,7 @@
 /eipihany
 /evolution
 /goa-1.0
+/go
 /Google
 /gtk-4.0
 /menus
@@ -38,8 +39,10 @@
 /GIMP
 /gtk-2.0
 /Postman
+/systemd
 arkrc
 background
+baloofilerc
 kiorc
 konsolerc
 konsolesshconfig

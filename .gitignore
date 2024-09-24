@@ -1,5 +1,6 @@
 /Android Open Source Project
 /autostart
+/create-next-app-nodejs
 /chromium
 /google-chrome
 /pulse
@@ -19,6 +20,8 @@
 /Google
 /gtk-4.0
 /menus
+/Notion
+/nvim/lazy-lock.json
 /totem
 /WebCord
 /qt5ct
@@ -40,6 +43,7 @@
 /gtk-2.0
 /Postman
 /systemd
+/yarn
 arkrc
 background
 baloofilerc

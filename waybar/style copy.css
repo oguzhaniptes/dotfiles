@@ -11,7 +11,7 @@
 
 /* The whole bar */
 #waybar {
-  background-color: black;
+  background-color: transparent;
   color: #c5e6ff;
   transition-property: background-color;
   transition-duration: 0.5s;
@@ -24,7 +24,7 @@
   padding: 0px 12px;
   margin-left: 12px;
   color: #c5e6ff;
-  background-color: black;
+  background-color: #1e1e1e;
 }
 
 /* Window */
@@ -32,7 +32,7 @@
   border-radius: 20px;
   padding: 0px 12px;
   color: #c5e6ff;
-  background-color: black;
+  background-color: #1e1e1e;
 }
 
 window#waybar.empty #window {
@@ -44,7 +44,7 @@ window#waybar.empty #window {
 /* Taskbar */
 #taskbar {
   border-radius: 20px;
-  background-color: black;
+  background-color: #1e1e1e;
   padding: 0px 8px;
   margin: 0px;
 }
@@ -66,7 +66,7 @@ window#waybar.empty #window {
   border-radius: 20px;
   padding: 0px 12px;
   color: #c5e6ff;
-  background-color: black;
+  background-color: #1e1e1e;
 }
 
 /* Weather */
@@ -84,7 +84,7 @@ window#waybar.empty #window {
   border-radius: 20px;
   padding: 0px 12px;
   color: #c5e6ff;
-  background-color: black;
+  background-color: #1e1e1e;
 }
 
 #custom-weather.severe {
@@ -122,7 +122,7 @@ window#waybar.empty #window {
   border-radius: 20px;
   padding: 2px 8px;
   color: #c5e6ff;
-  background-color: black;
+  background-color: #1e1e1e;
 }
 
 #workspaces button {
@@ -152,8 +152,8 @@ button:hover {
 
 #workspaces button.active {
   transition: all 0.5s ease-in-out;
-  border-radius: 8px;
-  min-width: 30px;
+  border-radius: 20px;
+  min-width: 50px;
   color: #c5e6ff;
   background-color: #313131;
 }
@@ -162,19 +162,19 @@ button:hover {
   border-radius: 20px;
   padding: 0px 12px;
   color: #c5e6ff;
-  background-color: black;
+  background-color: #1e1e1e;
 }
 
 #hardware {
   padding: 0px 12px;
   border-radius: 20px;
-  background-color: black;
+  background-color: #1e1e1e;
 }
 
 #control {
   padding: 0px 12px;
   border-radius: 20px;
-  background-color: black;
+  background-color: #1e1e1e;
 }
 
 #memory {
@@ -218,13 +218,13 @@ button:hover {
   padding: 0px 8px 0px 12px;
   margin-right: 12px;
   color: #c5e6ff;
-  background-color: black;
+  background-color: #1e1e1e;
 }
 
 #tray {
   border-radius: 20px;
   padding: 0px 12px;
-  background-color: black;
+  background-color: #1e1e1e;
 }
 
 #tray > .passive {
@@ -237,12 +237,12 @@ button:hover {
 }
 
 #tray menu {
-  background-color: black;
+  background-color: #1e1e1e;
 }
 
 #tray menuitem {
   padding: 4px;
-  background-color: black;
+  background-color: #1e1e1e;
   color: #c5e6ff;
 }
 
@@ -264,12 +264,12 @@ button:hover {
 /* Tooltips */
 tooltip {
   border-radius: 12px;
-  background-color: black;
+  background-color: #1e1e1e;
   opacity: 0.9;
 }
 
 tooltip label {
-  background-color: black;
+  background-color: #1e1e1e;
   padding: 12px;
   color: #c5e6ff;
   opacity: 0.9;

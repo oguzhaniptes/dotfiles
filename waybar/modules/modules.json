@@ -44,21 +44,22 @@
 
   // Clock
   "clock": {
-    "format": "  {:%d %a %B   %H:%M}",
+    // "format": "  {:%d %a %B   %H:%M}",
+    "format": "{:%d %a %B %H:%M}",
     "tooltip-format": "<big>{calendar}</big>",
     "format-alt": "{:%d-%m-%Y}",
     "format-icons": [""]
   },
 
   // Weather
-  "custom/weather": {
-    "format": "{}",
-    "format-alt": "{alt}: {}",
-    // "format-alt-click": "click-right",
-    "interval": 3600,
-    "exec": "curl -s 'https://wttr.in/konya?format=1'",
-    "exec-if": "ping wttr.in -c1"
-  },
+  // "custom/weather": {
+  //   "format": "{}",
+  //   "format-alt": "{alt}: {}",
+  //   // "format-alt-click": "click-right",
+  //   "interval": 3600,
+  //   "exec": "curl -s 'https://wttr.in/konya?format=1'",
+  //   "exec-if": "ping wttr.in -c1"
+  // },
 
   // --------- Right Icons --------- //
 
@@ -76,13 +77,16 @@
   "hyprland/language": {
     "format": "{}",
     "format-tr": "tr",
-    "format-en": "en",
-    "keyboard-name": "holdchip-technology-inc--holdchip-gaming-keyboard"
+    "format-en": "en"
   },
 
   "group/hardware": {
     "orientation": "horizontal",
-    "modules": ["memory", "cpu", "battery"]
+    "modules": [
+      "memory",
+      // "cpu",
+      "battery"
+    ]
   },
 
   "battery": {
@@ -98,12 +102,12 @@
     "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
   },
 
-  "cpu": {
-    "interval": 1,
-    "format": " {usage}%",
-    "on-click": "kitty -e htop"
-    // "format": "  {max_frequency}GHz <span color=\"darkgray\">| {usage}%</span>",
-  },
+  // "cpu": {
+  //   "interval": 1,
+  //   "format": " {usage}%",
+  //   "on-click": "kitty -e htop"
+  //   // "format": "  {max_frequency}GHz <span color=\"darkgray\">| {usage}%</span>",
+  // },
 
   "memory": {
     "interval": 10,
@@ -156,8 +160,8 @@
   "network": {
     "interval": 1,
     "format": "{ifname}",
-    "format-wifi": "{icon} {ifname}",
-    "format-ethernet": "󰈀 {ifname}",
+    "format-wifi": "{icon}",
+    "format-ethernet": "󰈀",
     "format-disconnected": "󰌙",
     "tooltip-format": "{ifname}",
     "tooltip-format-wifi": "󰤨 {ifname} @ {essid}\nIP: {ipaddr}\nStrength: {signalStrength}%\nFreq: {frequency}MHz\n Up: {bandwidthUpBits}  Down: {bandwidthDownBits}",
@@ -165,7 +169,7 @@
     "tooltip-format-disconnected": "Disconnected",
     "format-linked": "{ifname} (No IP) ",
     "format-alt": "{ifname}: IP:{ipaddr}",
-    "on-click": "~/.config/waybar/scripts/networkmanager.sh",
+    "on-click-left": "~/.config/waybar/scripts/networkmanager.sh",
     "format-icons": {
       "wifi": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"]
     }

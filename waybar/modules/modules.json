@@ -45,7 +45,7 @@
   // Clock
   "clock": {
     // "format": "  {:%d %a %B   %H:%M}",
-    "format": "{:%d %a %B %H:%M}",
+    "format": "{:%d %a %b %H:%M}",
     "tooltip-format": "<big>{calendar}</big>",
     "format-alt": "{:%d-%m-%Y}",
     "format-icons": [""]

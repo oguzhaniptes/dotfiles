@@ -12,7 +12,7 @@
 /* The whole bar */
 #waybar {
   background-color: black;
-  color: #c5e6ff;
+  color: #ffffff;
   transition-property: background-color;
   transition-duration: 0.5s;
   border-radius: 0px;
@@ -23,7 +23,7 @@
   border-radius: 20px;
   padding: 0px 12px;
   margin-left: 12px;
-  color: #c5e6ff;
+  color: #1793d1;
   background-color: black;
 }
 
@@ -31,7 +31,6 @@
 #window {
   border-radius: 20px;
   padding: 0px 12px;
-  color: #c5e6ff;
   background-color: black;
 }
 
@@ -65,7 +64,6 @@ window#waybar.empty #window {
 #clock {
   border-radius: 20px;
   padding: 0px 12px;
-  color: #c5e6ff;
   background-color: black;
 }
 
@@ -83,7 +81,6 @@ window#waybar.empty #window {
 #custom-weather.default {
   border-radius: 20px;
   padding: 0px 12px;
-  color: #c5e6ff;
   background-color: black;
 }
 
@@ -121,7 +118,6 @@ window#waybar.empty #window {
 #workspaces {
   border-radius: 20px;
   padding: 2px 8px;
-  color: #c5e6ff;
   background-color: black;
 }
 
@@ -134,7 +130,7 @@ window#waybar.empty #window {
 
 #workspaces button:hover {
   transition: all 0.5s ease-in-out;
-  color: #c5e6ff;
+  color: #1793d1;
   background-color: #313131;
   opacity: 0.8;
 }
@@ -154,14 +150,14 @@ button:hover {
   transition: all 0.5s ease-in-out;
   border-radius: 8px;
   min-width: 30px;
-  color: #c5e6ff;
+  color: #ffffff;
   background-color: #313131;
 }
 
 #language {
   border-radius: 20px;
   padding: 0px 12px;
-  color: #c5e6ff;
+  color: #ffffff;
   background-color: black;
 }
 
@@ -199,17 +195,17 @@ button:hover {
 }
 
 #pulseaudio {
-  color: #c5e6ff;
+  color: #ffffff;
   padding: 0px 8px;
 }
 
 #network {
-  color: #c5e6ff;
+  color: #ffffff;
   padding: 0px 8px;
 }
 
 #backlight {
-  color: #c5e6ff;
+  color: #ffffff;
   padding: 0px 8px;
 }
 
@@ -217,7 +213,6 @@ button:hover {
   border-radius: 20px;
   padding: 0px 8px 0px 12px;
   margin-right: 12px;
-  color: #c5e6ff;
   background-color: black;
 }
 
@@ -243,12 +238,12 @@ button:hover {
 #tray menuitem {
   padding: 4px;
   background-color: black;
-  color: #c5e6ff;
+  color: #ffffff;
 }
 
 #tray menuitem:hover {
   background-color: #313131;
-  color: #c5e6ff;
+  color: #1793d1;
 }
 
 /* If workspaces is the leftmost module, omit left margin */

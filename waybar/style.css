@@ -1,7 +1,7 @@
 * {
-  /* `otf-font-awesome` is required to be installed for icons */
-  font-family: JetBrainsMono Nerd Font;
-  font-size: 13px;
+  /* `ttf-ubuntu-nerd` is required to be installed for icons */
+  font-family: Ubuntu Nerd Font;
+  font-size: 14px;
   font-weight: 900;
   transition-property: background-color;
   transition-duration: 0.5s;
@@ -219,7 +219,7 @@ button:hover {
 #tray {
   border-radius: 20px;
   padding: 0px 12px;
-  background-color: black;
+  color: white;
 }
 
 #tray > .passive {
@@ -265,7 +265,7 @@ tooltip {
 
 tooltip label {
   background-color: black;
-  padding: 12px;
-  color: #c5e6ff;
+  padding: 2px 12px;
+  color: white;
   opacity: 0.9;
 }

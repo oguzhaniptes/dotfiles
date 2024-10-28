@@ -4,42 +4,43 @@
 
 # Get brightness
 get_backlight() {
-	LIGHT=$(printf "%.0f\n" $(brightnessctl i))
+	LIGHT=$(printf "%.1f\n" $(brightnessctl i))
 	echo "${LIGHT}%"
 }
 
+# My laptop screen
+device_name="amdgpu_bl1"
+
+get_backlight_percentage() {
+	pertencage=$(brightnessctl -m -d "$device_name" | awk -F, '{print substr($4, 0, length($4)-1)}')
+	echo "$pertencage"
+}
+
 # Get icons
-# get_icon() {
-# 	backlight="$(brightnessctl g)"
-# 	current="${backlight%%%}"
-# 	if [[ ("$current" -ge "0") && ("$current" -le "52") ]]; then
-# 		icon="$iDIR/brightness-20.png"
-# 	elif [[ ("$current" -ge "52") && ("$current" -le "103") ]]; then
-# 		icon="$iDIR/brightness-40.png"
-# 	elif [[ ("$current" -ge "103") && ("$current" -le "155") ]]; then
-# 		icon="$iDIR/brightness-60.png"
-# 	elif [[ ("$current" -ge "155") && ("$current" -le "207") ]]; then
-# 		icon="$iDIR/brightness-80.png"
-# 	elif [[ ("$current" -ge "180") && ("$current" -le "255") ]]; then
-# 		icon="$iDIR/brightness-100.png"
-# 	fi
-# }
+get_icon() {
+	backlight="$(brightnessctl g)"
+	if [[ ("$backlight" -ge "0") && ("$backlight" -le "85") ]]; then
+		echo "󰃞"
+	elif [[ ("$backlight" -ge "86") && ("$backlight" -le "170") ]]; then
+		echo "󰃟"
+	elif [[ ("$backlight" -ge "171") && ("$backlight" -le "255") ]]; then
+		echo "󰃠"
+	fi
+}
 
 # Notify
-# notify_user() {
-# 	notify-send -h string:x-canonical-private-synchronous:sys-notify -u low -i "$icon" "Brightness : $(brightnessctl g)"
-# }
+notify_user() {
+	notify-send -h string:x-canonical-private-synchronous:sys-notify -u low -t 1000 "$(get_icon)  Brightness : $(get_backlight_percentage)"
+}
 
 # Increase brightness
 inc_backlight() {
-	brightnessctl set +10%
-	# && get_icon && notify_user
+	brightnessctl set +10% && notify_user
 }
 
 # Decrease brightness
 dec_backlight() {
-	brightnessctl set 10%-
-	# && get_icon && notify_user
+	brightnessctl set 10%- && notify_user
 }
 
 # Execute accordingly

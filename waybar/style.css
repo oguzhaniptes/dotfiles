@@ -1,7 +1,7 @@
 * {
   /* Install apple-font */
   font-family: SF Pro Display;
-  font-size: 14px;
+  font-size: 13px;
   color: white;
   background: transparent;
 }
@@ -13,7 +13,6 @@
 #custom-appmenu,
 #custom-appmenuwlr,
 #custom-exit,
-#clock,
 #network,
 #pulseaudio,
 #cpu,
@@ -23,7 +22,12 @@
 #language,
 #temperature {
   font-weight: 500;
-  padding: 6px 8px;
+  padding: 5px 8px;
+}
+
+#clock {
+  font-weight: 700;
+  padding: 5px 8px;
 }
 
 #custom-appmenu,

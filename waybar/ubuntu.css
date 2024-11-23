@@ -1,0 +1,271 @@
+* {
+  /* `ttf-ubuntu-nerd` is required to be installed for icons */
+  font-family: Ubuntu Nerd Font;
+  font-size: 14px;
+  font-weight: 900;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  border: none;
+  background-color: transparent;
+}
+
+/* The whole bar */
+#waybar {
+  background-color: black;
+  color: #ffffff;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  border-radius: 0px;
+}
+
+#custom-appmenu,
+#custom-appmenuwlr {
+  border-radius: 20px;
+  padding: 0px 12px;
+  margin-left: 12px;
+  color: #1793d1;
+  background-color: black;
+}
+
+/* Window */
+#window {
+  border-radius: 20px;
+  padding: 0px 12px;
+  background-color: black;
+}
+
+window#waybar.empty #window {
+  padding: 0px;
+  margin: 0px;
+  background-color: transparent;
+}
+
+/* Taskbar */
+#taskbar {
+  border-radius: 20px;
+  background-color: black;
+  padding: 0px 8px;
+  margin: 0px;
+}
+
+#taskbar button {
+  background-color: transparent;
+  margin: 0px;
+  border-radius: 20px;
+  padding: 0px 8px;
+}
+
+#taskbar button:hover {
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+
+#clock {
+  border-radius: 20px;
+  padding: 0px 12px;
+  background-color: black;
+}
+
+/* Weather */
+#custom-weather,
+#custom-weather.severe,
+#custom-weather.sunnyDay,
+#custom-weather.clearNight,
+#custom-weather.cloudyFoggyDay,
+#custom-weather.cloudyFoggyNight,
+#custom-weather.rainyDay,
+#custom-weather.rainyNight,
+#custom-weather.showyIcyDay,
+#custom-weather.snowyIcyNight,
+#custom-weather.default {
+  border-radius: 20px;
+  padding: 0px 12px;
+  background-color: black;
+}
+
+#custom-weather.severe {
+  color: #eb937d;
+}
+
+#custom-weather.sunnyDay {
+  color: #c2ca76;
+}
+
+#custom-weather.clearNight {
+  color: #cad3f5;
+}
+
+#custom-weather.cloudyFoggyDay,
+#custom-weather.cloudyFoggyNight {
+  color: #c2ddda;
+}
+
+#custom-weather.rainyDay,
+#custom-weather.rainyNight {
+  color: #5aaca5;
+}
+
+#custom-weather.showyIcyDay,
+#custom-weather.snowyIcyNight {
+  color: #d6e7e5;
+}
+
+#custom-weather.default {
+  color: #dbd9d8;
+}
+
+#workspaces {
+  border-radius: 20px;
+  padding: 2px 8px;
+  background-color: black;
+}
+
+#workspaces button {
+  transition: all 0.5s ease-in-out;
+  border-radius: 20px;
+  padding: 0px 4px;
+  margin: 2px 0px;
+}
+
+#workspaces button:hover {
+  transition: all 0.5s ease-in-out;
+  color: #1793d1;
+  background-color: #313131;
+  opacity: 0.8;
+}
+
+button {
+  padding: 0px;
+  margin: 0px;
+}
+
+button:hover {
+  padding: 0px 20px;
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: inherit;
+}
+
+#workspaces button.active {
+  transition: all 0.5s ease-in-out;
+  border-radius: 8px;
+  min-width: 30px;
+  color: #ffffff;
+  background-color: #313131;
+}
+
+#language {
+  border-radius: 20px;
+  padding: 0px 12px;
+  color: #ffffff;
+  background-color: black;
+}
+
+#hardware {
+  padding: 0px 12px;
+  border-radius: 20px;
+  background-color: black;
+}
+
+#control {
+  padding: 0px 12px;
+  border-radius: 20px;
+  background-color: black;
+}
+
+#memory {
+  color: #ebcb8b;
+  padding: 0px 4px;
+}
+
+#cpu {
+  color: #fb958b;
+  padding: 0px 4px;
+}
+
+#battery {
+  color: #c5e6ff;
+  padding: 0px 4px;
+}
+
+#battery.charging,
+#battery.full,
+#battery.plugged {
+  color: #26a65b;
+}
+
+#pulseaudio {
+  color: #ffffff;
+  padding: 0px 8px;
+}
+
+#network {
+  color: #ffffff;
+  padding: 0px 8px;
+}
+
+#backlight {
+  color: #ffffff;
+  padding: 0px 8px;
+}
+
+#custom-exit {
+  border-radius: 20px;
+  padding: 0px 8px 0px 12px;
+  margin-right: 12px;
+  background-color: black;
+}
+
+#tray {
+  border-radius: 20px;
+  padding: 0px 12px;
+  color: white;
+}
+
+#tray > .passive {
+  -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+  -gtk-icon-effect: highlight;
+  background-color: #eb4d4b;
+}
+
+#tray menu {
+  background-color: black;
+}
+
+#tray menuitem {
+  padding: 4px;
+  background-color: black;
+  color: #ffffff;
+}
+
+#tray menuitem:hover {
+  background-color: #313131;
+  color: #1793d1;
+}
+
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left > widget:first-child > #workspaces {
+  margin-left: 0;
+}
+
+/* If workspaces is the rightmost module, omit right margin */
+.modules-right > widget:last-child > #workspaces {
+  margin-right: 0;
+}
+
+/* Tooltips */
+tooltip {
+  border-radius: 12px;
+  background-color: black;
+  opacity: 0.9;
+}
+
+tooltip label {
+  background-color: black;
+  padding: 2px 12px;
+  color: white;
+  opacity: 0.9;
+}

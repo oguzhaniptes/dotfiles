@@ -3,7 +3,7 @@
 
   //  App Menu
   "custom/appmenu": {
-    "format": "󰣇  Arch",
+    "format": "󰣇",
     "format-icons": {},
     "on-click": "sleep 0.2;rofi -show drun -show-icons -replace",
     "tooltip": false
@@ -45,7 +45,7 @@
   // Clock
   "clock": {
     // "format": "  {:%d %a %B   %H:%M}",
-    "format": "{:%d %a %b %H:%M}",
+    "format": "{:%a %b %d  %H:%M}",
     "tooltip-format": "<big>{calendar}</big>",
     "format-alt": "{:%d-%m-%Y}",
     "format-icons": [""]
@@ -83,7 +83,7 @@
   "group/hardware": {
     "orientation": "horizontal",
     "modules": [
-      "memory",
+      // "memory",
       // "cpu",
       "battery"
     ]
@@ -96,10 +96,12 @@
       "warning": 20,
       "critical": 10
     },
-    "format": "{icon} {capacity}%",
-    "format-charging": "󰂄 {capacity}%",
-    "format-plugged": " {capacity}%",
-    "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
+    // "format": "{icon} {capacity}%",
+    "format": "{icon}",
+    "format-charging": "{icon} {capacity}%",
+    "format-plugged": "{icon} {capacity}%",
+    // "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
+    "format-icons": ["", "", "", "", ""]
   },
 
   // "cpu": {

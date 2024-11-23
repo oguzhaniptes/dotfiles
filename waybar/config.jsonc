@@ -1,0 +1,14 @@
+{
+  // Load Custom Modules
+  "include": ["$HOME/.config/waybar/modules/modules.json"],
+  "layer": "top",
+  "position": "top",
+
+  "height": 24,
+  "margin": 0,
+  "spacing": 8,
+
+  // Modules configuration
+  "modules-left": ["custom/appmenu", "hyprland/window"],
+  "modules-right": ["hyprland/workspaces", "hyprland/language", "group/hardware", "tray", "clock", "custom/exit"]
+}

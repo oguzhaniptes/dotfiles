@@ -1,5 +1,6 @@
 * {
-  font-family: "JetBrainsMono Nerd Font";
+  /* Install apple-font */
+  font-family: SF Pro Display;
   transition: 200ms;
   background-image: none;
   box-shadow: none;

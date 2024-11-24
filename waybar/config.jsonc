@@ -10,5 +10,5 @@
 
   // Modules configuration
   "modules-left": ["custom/appmenu", "hyprland/window"],
-  "modules-right": ["hyprland/workspaces", "hyprland/language", "group/hardware", "tray", "clock", "custom/exit"]
+  "modules-right": ["hyprland/workspaces", "hyprland/language", "group/control", "group/hardware", "tray", "clock", "custom/exit"]
 }

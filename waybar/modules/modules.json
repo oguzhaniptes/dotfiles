@@ -123,7 +123,11 @@
 
   "group/control": {
     "orientation": "horizontal",
-    "modules": ["backlight", "pulseaudio", "network"]
+    "modules": [
+      // "backlight",
+      "pulseaudio",
+      "network"
+    ]
   },
 
   "backlight": {
@@ -140,8 +144,8 @@
 
   "pulseaudio": {
     "scroll-step": 5,
-    "format": "{icon} {volume}% {format_source}",
-    "format-bluetooth": "{volume}% {format_source}",
+    "format": "{icon} {format_source}",
+    "format-bluetooth": "{format_source}",
     "format-bluetooth-muted": " {icon} {format_source}",
     "format-muted": " {format_source}",
     "ignored-sinks": ["Easy Effects Sink"],
@@ -169,8 +173,8 @@
     "format-ethernet": "󰈀",
     "format-disconnected": "󰌙",
     "tooltip-format": "{ifname}",
-    "tooltip-format-wifi": "󰤨 {ifname} @ {essid}\nIP: {ipaddr}\nStrength: {signalStrength}%\nFreq: {frequency}MHz\n Up: {bandwidthUpBits}  Down: {bandwidthDownBits}",
-    "tooltip-format-ethernet": "󰈀 {ifname}\nIP: {ipaddr}\n up: {bandwidthUpBits}  down: {bandwidthDownBits}",
+    "tooltip-format-wifi": "󰤨  {ifname} @ {essid}\nIP: {ipaddr}\nStrength: {signalStrength}%\nFreq: {frequency}MHz\n  Up: {bandwidthUpBits}   Down: {bandwidthDownBits}",
+    "tooltip-format-ethernet": "󰈀  {ifname}\nIP: {ipaddr}\n  up: {bandwidthUpBits}   down: {bandwidthDownBits}",
     "tooltip-format-disconnected": "Disconnected",
     "format-linked": "{ifname} (No IP) ",
     "format-alt": "{ifname}: IP:{ipaddr}",

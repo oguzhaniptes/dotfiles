@@ -163,7 +163,9 @@
     },
     "on-click": "pavucontrol",
     "on-click-middle": "pulseaudio-control --node-blacklist 'easyeffects_sink' next-node",
-    "on-click-right": "pactl set-source-mute @DEFAULT_SOURCE@ toggle"
+    "on-click-right": "pactl set-source-mute @DEFAULT_SOURCE@ toggle",
+    "tooltip": true,
+    "tooltip-format": "Level: {volume} %\nSource: {desc}"
   },
 
   "network": {

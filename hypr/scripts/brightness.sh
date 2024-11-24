@@ -9,11 +9,12 @@ get_backlight() {
 }
 
 # My laptop screen
-device_name="amdgpu_bl1"
+device_name="amdgpu_bl2"
 
 get_backlight_percentage() {
-	pertencage=$(brightnessctl -m -d "$device_name" | awk -F, '{print substr($4, 0, length($4)-1)}')
-	echo "$pertencage"
+	raw_percentage=$(brightnessctl -m -d "$device_name" | awk -F, '{print substr($4, 0, length($4)-1)}')
+	percentage=$(((($raw_percentage + 2) / 5) * 5))
+	echo "$percentage"
 }
 
 # Get icons
@@ -30,7 +31,7 @@ get_icon() {
 
 # Notify
 notify_user() {
-	notify-send -h string:x-canonical-private-synchronous:sys-notify -u low -t 1000 "$(get_icon)  Brightness : $(get_backlight_percentage)"
+	notify-send -h string:x-canonical-private-synchronous:sys-notify -u low -t 1000 "$(get_icon)  Brightness: $(get_backlight_percentage)%"
 }
 
 # Increase brightness

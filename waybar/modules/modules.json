@@ -46,7 +46,8 @@
   "clock": {
     // "format": "  {:%d %a %B   %H:%M}",
     "format": "{:%a %b %d  %H:%M}",
-    "tooltip-format": "<big>{calendar}</big>",
+    // "tooltip-format": "<span font=\"Ubuntu Nerd Font 12\"><big>{calendar}</big></span>",
+    "tooltip-format": "<span><tt><big>{calendar}</big></tt></span>",
     "format-alt": "{:%d-%m-%Y}",
     "format-icons": [""]
   },

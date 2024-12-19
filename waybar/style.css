@@ -82,6 +82,7 @@ tooltip {
   border-radius: 12px;
   background-color: #333436;
   opacity: 0.9;
+  font-weight: 700;
 }
 
 #language {

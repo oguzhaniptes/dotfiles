@@ -19,6 +19,6 @@ style = "Regular"
 
 [general]
 import = [
-    "~/.config/alacritty/themes/themes/google.toml"
+    "~/.config/alacritty/themes/themes/rose_pine.toml"
 ]
 

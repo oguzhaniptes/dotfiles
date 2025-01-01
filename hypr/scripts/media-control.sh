@@ -1,20 +1,19 @@
 #!/bin/bash
 
-
 next() {
 	playerctl next
 }
 
 previous() {
-  playerctl previous
+	playerctl previous
 }
 
 stop() {
-  playerctl --player=%any stop
+	playerctl --player=%any pause
 }
 
 play() {
-  playerctl --player=%any play
+	playerctl --player=%any play-pause
 }
 
 if [[ "$1" == "--next" ]]; then

@@ -36,12 +36,14 @@ notify_user() {
 
 # Increase brightness
 inc_backlight() {
-	brightnessctl set +10% && notify_user
+	brightnessctl set +10%
+	# && notify_user
 }
 
 # Decrease brightness
 dec_backlight() {
-	brightnessctl set 10%- && notify_user
+	brightnessctl set 10%-
+	# && notify_user
 }
 
 # Execute accordingly

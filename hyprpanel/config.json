@@ -417,5 +417,7 @@
   "menus.dashboard.shortcuts.left.shortcut1.tooltip": "Chrome",
   "menus.dashboard.shortcuts.left.shortcut1.command": "google-chrome-stable",
   "menus.dashboard.shortcuts.left.shortcut1.icon": "",
-  "menus.dashboard.shortcuts.left.shortcut2.command": "spotify"
+  "menus.dashboard.shortcuts.left.shortcut2.command": "spotify",
+  "menus.media.displayTimeTooltip": true,
+  "menus.media.hideAlbum": false
 }

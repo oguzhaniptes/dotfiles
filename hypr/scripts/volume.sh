@@ -39,12 +39,14 @@ notify_mute_volume() {
 
 # Increase Volume
 inc_volume() {
-	pamixer -i 5 && notify_volume
+	pamixer -i 5
+	# && notify_volume
 }
 
 # Decrease Volume
 dec_volume() {
-	pamixer -d 5 && notify_volume
+	pamixer -d 5
+	# && notify_volume
 }
 
 # Toggle Mute

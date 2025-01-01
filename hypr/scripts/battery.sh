@@ -1,23 +1,25 @@
-#!/bin/sh
+#!/bin/bash
 
 upower=$(upower -i $(upower -e | grep BAT))
 
-bat=$(grep percentage <<< $upower | awk "{print \$2}" | sed -e "s/%//")
+bat=$(grep percentage <<<$upower | awk "{print \$2}" | sed -e "s/%//")
 
-if ! grep "discharging" <<< $upower >/dev/null; then
-    echo -n "󱐋"
+if ! grep "discharging" <<<$upower >/dev/null; then
+    charging_icon="󱐋"
+else
+    charging_icon=""
 fi
 
 if ((bat >= 90)); then
-    echo -n " "
+    battery_icon=""
 elif ((bat >= 70)); then
-    echo -n " "
+    battery_icon=""
 elif ((bat >= 35)); then
-    echo -n " "
+    battery_icon=""
 elif ((bat >= 20)); then
-    echo -n " "
+    battery_icon=""
 else
-    echo -n " "
+    battery_icon=""
 fi
 
-echo " $bat %"
+printf "%s %s %4s%%\n" "$charging_icon" "$battery_icon" "$bat"

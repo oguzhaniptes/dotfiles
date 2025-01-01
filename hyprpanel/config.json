@@ -16,7 +16,7 @@
   "menus.clock.time.hideSeconds": false,
   "menus.clock.weather.enabled": true,
   "menus.clock.weather.location": "Konya",
-  "menus.clock.weather.unit": "imperial",
+  "menus.clock.weather.unit": "metric",
   "theme.bar.buttons.modules.ram.enableBorder": false,
   "menus.power.lowBatteryNotification": false,
   "theme.bar.menus.monochrome": false,

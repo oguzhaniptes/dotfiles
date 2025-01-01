@@ -413,5 +413,9 @@
   "theme.osd.orientation": "horizontal",
   "theme.osd.duration": 3000,
   "theme.osd.margins": "0px 0px 120px 0px",
-  "theme.bar.buttons.padding_y": "0.3rem"
+  "theme.bar.buttons.padding_y": "0.3rem",
+  "menus.dashboard.shortcuts.left.shortcut1.tooltip": "Chrome",
+  "menus.dashboard.shortcuts.left.shortcut1.command": "google-chrome-stable",
+  "menus.dashboard.shortcuts.left.shortcut1.icon": "",
+  "menus.dashboard.shortcuts.left.shortcut2.command": "spotify"
 }

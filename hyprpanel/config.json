@@ -34,7 +34,7 @@
   "theme.bar.menus.menu.dashboard.confirmation_scaling": 80,
   "theme.bar.menus.menu.media.scaling": 80,
   "theme.bar.menus.menu.volume.scaling": 80,
-  "theme.bar.menus.menu.network.scaling": 80,
+  "theme.bar.menus.menu.network.scaling": 90,
   "theme.bar.menus.menu.bluetooth.scaling": 80,
   "theme.bar.menus.menu.battery.scaling": 80,
   "theme.bar.menus.menu.clock.scaling": 80,

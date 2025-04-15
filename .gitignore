@@ -60,6 +60,7 @@
 /systemd
 /spicetify
 /yarn
+/Slack
 arkrc
 background
 baloofilerc
@@ -85,3 +86,4 @@ monitors.xml~
 user-dirs.dirs
 user-dirs.locale
 connections.db
+dleyna-renderer-service.conf

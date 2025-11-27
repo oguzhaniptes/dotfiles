@@ -1,5 +1,7 @@
+/Antigravity
 /Android Open Source Project
 /autostart
+bluedevilglobalrc
 /create-next-app-nodejs
 /chromium
 /google-chrome
@@ -43,6 +45,8 @@
 /JetBrains
 /qt6ct
 /libreoffice
+/libaccounts-glib
+/pgadmin4
 /vlc
 /gtk-3.0
 /xfce4
@@ -85,5 +89,7 @@ monitors.xml
 monitors.xml~
 user-dirs.dirs
 user-dirs.locale
+unity3d
+unityhub
 connections.db
 dleyna-renderer-service.conf

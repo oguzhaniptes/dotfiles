@@ -4,6 +4,8 @@
 bluedevilglobalrc
 /create-next-app-nodejs
 /chromium
+eas-cli-nodejs
+/fontconfig
 /google-chrome
 /github-copilot
 /pulse
@@ -17,6 +19,8 @@ bluedevilglobalrc
 /obsidian
 /spotify
 /kde.org
+KDE
+kdedefaults
 /kdiskmark
 /libvirt
 /session
@@ -93,3 +97,4 @@ unity3d
 unityhub
 connections.db
 dleyna-renderer-service.conf
+xsettingsd

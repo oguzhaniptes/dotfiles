@@ -285,5 +285,5 @@ overlay = "#425047"
 shadow = "#425047"
 
 [persistence]
-last_tab = "keybinds"
+last_tab = "looknfeel"
 first_run = false

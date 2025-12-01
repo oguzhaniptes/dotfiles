@@ -26,7 +26,7 @@
   "theme.bar.buttons.style": "default",
   "theme.bar.buttons.dashboard.background": "#21252b",
   "theme.bar.buttons.dashboard.icon": "#1d94cf",
-  "theme.font.weight": 500,
+  "theme.font.weight": 600,
   "theme.bar.scaling": 85,
   "theme.osd.scaling": 80,
   "theme.bar.menus.menu.power.scaling": 80,
@@ -403,8 +403,8 @@
   "theme.bar.border_radius": "1em",
   "theme.bar.buttons.workspaces.enableBorder": false,
   "bar.workspaces.show_icons": false,
-  "bar.workspaces.show_numbered": false,
-  "bar.workspaces.showWsIcons": true,
+  "bar.workspaces.show_numbered": true,
+  "bar.workspaces.showWsIcons": false,
   "bar.workspaces.workspaceMask": false,
   "bar.workspaces.numbered_active_indicator": "underline",
   "menus.media.displayTime": true,
@@ -430,11 +430,11 @@
   "bar.launcher.icon": "󰣇 Arch",
   "bar.launcher.autoDetectIcon": false,
   "theme.bar.buttons.dashboard.enableBorder": false,
-  "bar.workspaces.showApplicationIcons": true,
+  "bar.workspaces.showApplicationIcons": false,
   "bar.workspaces.applicationIconOncePerWorkspace": true,
-  "bar.workspaces.showAllActive": true,
+  "bar.workspaces.showAllActive": false,
   "theme.bar.buttons.workspaces.smartHighlight": true,
-  "theme.bar.buttons.windowtitle.enableBorder": true,
+  "theme.bar.buttons.windowtitle.enableBorder": false,
   "bar.windowtitle.icon": true,
   "bar.windowtitle.truncation": true,
   "theme.bar.buttons.volume.enableBorder": false,
@@ -446,7 +446,7 @@
   "bar.battery.hideLabelWhenFull": true,
   "bar.battery.label": true,
   "bar.systray.ignore": [
-    "google-chrome-stable"
+    "chrome_status_icon_1"
   ],
   "bar.clock.icon": "󰸗 ",
   "notifications.timeout": 5000,
@@ -480,6 +480,75 @@
   "theme.osd.muted_zero": false,
   "theme.osd.active_monitor": true,
   "theme.bar.shadowMargins": "0px 0px 0px 0px",
-  "bar.workspaces.monitorSpecific": false,
-  "theme.bar.menus.menu.notifications.height": "58em"
+  "bar.workspaces.monitorSpecific": true,
+  "theme.bar.menus.menu.notifications.height": "58em",
+  "bar.network.truncation": true,
+  "bar.network.label": false,
+  "theme.bar.buttons.network.enableBorder": false,
+  "bar.bluetooth.label": false,
+  "bar.clock.showIcon": false,
+  "bar.clock.showTime": true,
+  "theme.bar.buttons.media.enableBorder": false,
+  "bar.media.truncation": true,
+  "bar.media.show_label": true,
+  "bar.notifications.show_total": true,
+  "bar.notifications.hideCountWhenZero": true,
+  "theme.bar.buttons.notifications.enableBorder": false,
+  "notifications.position": "top right",
+  "theme.bar.buttons.modules.microphone.enableBorder": false,
+  "theme.bar.buttons.modules.cpuTemp.enableBorder": false,
+  "bar.customModules.cpuTemp.showUnit": true,
+  "hyprpanel.restartAgs": true,
+  "bar.windowtitle.class_name": true,
+  "bar.windowtitle.label": true,
+  "theme.bar.buttons.modules.hyprsunset.enableBorder": false,
+  "theme.bar.buttons.modules.hypridle.enableBorder": false,
+  "bar.layouts": {
+    "*": {
+      "left": [
+        "dashboard",
+        "workspaces",
+        "windowtitle"
+      ],
+      "middle": [
+        "media"
+      ],
+      "right": [
+        "volume",
+        "systray",
+        "clock",
+        "power"
+      ]
+    },
+    "eDP-1": {
+      "left": [
+        "dashboard",
+        "workspaces",
+        "windowtitle"
+      ],
+      "middle": [
+        "media"
+      ],
+      "right": [
+        "ram",
+        "volume",
+        "network",
+        "bluetooth",
+        "kbinput",
+        "battery",
+        "systray",
+        "clock",
+        "notifications",
+        "power"
+      ]
+    }
+  },
+  "menus.power.showLabel": true,
+  "bar.customModules.ram.label": true,
+  "bar.customModules.ram.labelType": "percentage",
+  "bar.customModules.ram.round": true,
+  "bar.customModules.netstat.label": true,
+  "bar.customModules.kbLayout.label": true,
+  "bar.customModules.kbLayout.labelType": "code",
+  "theme.bar.buttons.modules.kbLayout.enableBorder": false
 }

@@ -285,5 +285,5 @@ overlay = "#425047"
 shadow = "#425047"
 
 [persistence]
-last_tab = "looknfeel"
+last_tab = "win-rules"
 first_run = false

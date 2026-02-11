@@ -545,10 +545,11 @@
   },
   "menus.power.showLabel": true,
   "bar.customModules.ram.label": true,
-  "bar.customModules.ram.labelType": "percentage",
+  "bar.customModules.ram.labelType": "used/total",
   "bar.customModules.ram.round": true,
   "bar.customModules.netstat.label": true,
   "bar.customModules.kbLayout.label": true,
   "bar.customModules.kbLayout.labelType": "code",
-  "theme.bar.buttons.modules.kbLayout.enableBorder": false
+  "theme.bar.buttons.modules.kbLayout.enableBorder": false,
+  "bar.customModules.ram.pollingInterval": 2000
 }
